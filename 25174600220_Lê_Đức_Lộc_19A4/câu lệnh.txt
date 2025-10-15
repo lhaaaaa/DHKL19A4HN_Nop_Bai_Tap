@@ -1,0 +1,424 @@
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4 (main)
+$ git clone https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap.git
+Cloning into '25174600220_Le_Duc_Loc_bai_tap'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4 (main)
+$ cd 25174600220_Le_Duc_Loc_bai_tap
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur, eros at
+lacinia suscipit, magna turpis aliquam est, sit amet aliquam quam libero id mi. Ut vel
+placerat risus. Sed tempor in ex vitae sodales. Donec et tempor orci. In pharetra
+viverra sagittis. Vestibulum risus ante, molestie ac eros efficitur, bibendum tincidunt
+turpis. In sit amet tortor gravida, ultricies ante vitae, varius tortor. Aliquam finibus
+porta nulla sed gravida. Aliquam ultricies dapibus ante eget molestie. In hac habitasse
+platea dictumst. Aliquam aliquam enim at massa pharetra, et vestibulum sapien
+consequat. Donec accumsan quis metus at pellentesque. Morbi quis felis placerat,
+interdum justo a, aliquam risus." > README.md
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git add .
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git commit -m "Thay đổi file"
+[main d6256b6] Thay đổi file
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 647 bytes | 647.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap.git
+   b28af38..d6256b6  main -> main
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git checkout -b "nhanh_1"
+Switched to a new branch 'nhanh_1'
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (nhanh_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (nhanh_1)
+$ git add .
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (nhanh_1)
+$ git commit -m  "Tạo nhánh 1"
+[nhanh_1 57e7583] Tạo nhánh 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_1.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (nhanh_1)
+$ git push origin nhanh_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 367 bytes | 367.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_1' on GitHub by visiting:
+remote:      https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap/pull/new/nhanh_1
+remote:
+To https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap.git
+ * [new branch]      nhanh_1 -> nhanh_1
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (nhanh_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git checkout -b "branch_2"
+Switched to a new branch 'branch_2'
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_2)
+$ git add .
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_2)
+$ git commit -m "Tạo nhánh 2"
+[branch_2 f98d5d5] Tạo nhánh 2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_2)
+$ git push origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 361 bytes | 361.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_2' on GitHub by visiting:
+remote:      https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap/pull/new/branch_2
+remote:
+To https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap.git
+ * [new branch]      branch_2 -> branch_2
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git checkout -b "branch_3"
+Switched to a new branch 'branch_3'
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_3)
+$ git add .
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_3)
+$ git commit -m "Tạo nhánh 3"
+[branch_3 936dfea] Tạo nhánh 3
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_3.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 370 bytes | 370.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_3' on GitHub by visiting:
+remote:      https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap/pull/new/branch_3
+remote:
+To https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap.git
+ * [new branch]      branch_3 -> branch_3
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git checkout -b "branch_4"
+Switched to a new branch 'branch_4'
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_4)
+$ git add .
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_4)
+$ git commit -m "Tạo nhánh 4"
+[branch_4 76c2935] Tạo nhánh 4
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_4.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_4)
+$ git push origin branch_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 360 bytes | 360.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_4' on GitHub by visiting:
+remote:      https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap/pull/new/branch_4
+remote:
+To https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap.git
+ * [new branch]      branch_4 -> branch_4
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_4)
+$ checkout main
+bash: checkout: command not found
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git branch -d branch_4
+error: the branch 'branch_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_4'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git branch -D branch_4
+Deleted branch branch_4 (was 76c2935).
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git branch -l
+  branch_2
+  branch_3
+* main
+  nhanh_1
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git pull
+Already up to date.
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ mkdir main_folder
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ cd main_folder
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap/main_folder (main)
+$ touch main_txt_1.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap/main_folder (main)
+$ touch main_txt_2.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap/main_folder (main)
+$ touch main_txt_3.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap/main_folder (main)
+$ git add main_folder
+fatal: pathspec 'main_folder' did not match any files
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap/main_folder (main)
+$ cd main_folder
+bash: cd: main_folder: No such file or directory
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap/main_folder (main)
+$ cd ..
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git add main_folder
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git commit -m "Thêm folder"
+[main 12382bb] Thêm folder
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 363 bytes | 181.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap.git
+   d6256b6..12382bb  main -> main
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git checkout nhanh_1
+Switched to branch 'nhanh_1'
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (nhanh_1)
+$ gt checkout-d banch_5
+bash: gt: command not found
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (nhanh_1)
+$ git checkout -d banch_5
+fatal: git checkout: --detach does not take a path argument 'banch_5'
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (nhanh_1)
+$ git checkout -b "banch_5"
+Switched to a new branch 'banch_5'
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (banch_5)
+$ ls
+README.md  text_branch_1.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (banch_5)
+$ echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non
+metus eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie
+accumsan sapien, ac finibus libero lobortis quis. Praesent ac commodo eros. Nullam
+malesuada v el dui nec feugiat. Cras justo ipsum, scelerisque et elit vitae, porttitor
+tristique turpis. Nam ut hendrerit est. Nulla sed tincidunt nibh. Class aptent taciti
+sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vitae
+egestas lacus. Phasellus turpis ante, euismod quis pellentesque et, pharetra id ligula.
+Vestibulum mattis sem ac ligula auctor viverra. Phasellus dignissim mollis leo, vitae
+tristique enim." > text_branch_1.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (banch_5)
+$ git add .
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (banch_5)
+$ git commit -m "Sửa đổi file"
+[banch_5 d9a59dc] Sửa đổi file
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (banch_5)
+$ git push origin banch_5
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 702 bytes | 351.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'banch_5' on GitHub by visiting:
+remote:      https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap/pull/new/banch_5
+remote:
+To https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap.git
+ * [new branch]      banch_5 -> banch_5
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (banch_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git branch -d banch_5
+error: the branch 'banch_5' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D banch_5'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git branch -D banch_5
+Deleted branch banch_5 (was d9a59dc).
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git branch -l
+  branch_2
+  branch_3
+* main
+  nhanh_1
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git branch -D nhanh 1
+error: branch 'nhanh' not found
+error: branch '1' not found
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git branch -D nhanh_1
+Deleted branch nhanh_1 (was 57e7583).
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git branch -D nhanh_2
+error: branch 'nhanh_2' not found
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git add .
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git commit -m "Xóa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git push origin
+To https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git fetch
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (9/9), 4.70 KiB | 109.00 KiB/s, done.
+From https://github.com/LeDucLoc-25174600220-19A4/25174600220_Le_Duc_Loc_bai_tap
+   12382bb..6f11f94  main       -> origin/main
+   57e7583..9ef139b  nhanh_1    -> origin/nhanh_1
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git pull
+Updating 12382bb..6f11f94
+Fast-forward
+ text_branch_1.txt | 9 +++++++++
+ text_branch_2.txt | 1 +
+ text_branch_3.txt | 1 +
+ text_branch_4.txt | 1 +
+ 4 files changed, 12 insertions(+)
+ create mode 100644 text_branch_1.txt
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git push origin
+Everything up-to-date
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git branch -l
+  branch_2
+  branch_3
+* main
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git add .
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git commit "Xóa file"
+error: pathspec 'Xóa file' did not match any file(s) known to git
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git commit -m "Xóa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$ git push origin
+Everything up-to-date
+
+Le Chuc@DESKTOP-37NKTHB MINGW64 ~/Documents/kho_test_19A4/25174600220_Le_Duc_Loc_bai_tap (main)
+$
