@@ -1,0 +1,385 @@
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git commit -m chinh sua tep tin
+[main 84e8ba7] chinh sua tep tin
+1 file changed, 9 insertions(+), 1 deletion(-)
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 637 bytes | 637.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217
+23c8a6f..84e8ba7  main -> main
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git checkout -b branch_1
+Switched to a new branch 'branch_1'
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_1)
+$ echo Lorem ipsum dolor sit amet, consectetur adipiscing elit. > text_branch_1.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_1)
+$ git add .
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_1)
+$  git commit -m them text_branch_1
+[branch_1 79050a1] them text_branch_1
+1 file changed, 1 insertion(+)
+create mode 100644 text_branch_1.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_1)
+$ git push origin branch_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+  remote: Create a pull request for 'branch_1' on GitHub by visiting:
+  remote:      https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217/pull/new/branch_1
+remote:
+  To https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217
+* [new branch]      branch_1 -> branch_1
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git checkout -b branch_2
+Switched to a new branch 'branch_2'
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_2)
+$ echo Praesent ullamcorper orci eu erat placerat sodales. > text_branch_2.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_2)
+$ git add .
+warning: in the working copy of 'text_branch_2.txt', LF will be replaced by CRLF the next time Git touches it
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_2)
+$ git commit -m them text_branch_2
+[branch_2 666f2e1] them text_branch_2
+1 file changed, 1 insertion(+)
+create mode 100644 text_branch_2.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_2)
+$ git origin branch_2
+git: 'origin' is not a git command. See 'git --help'.
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_2)
+$ git push origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 340 bytes | 340.00 KiB/s, done.
+Total 3 (delta 1), reused 1 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+  remote: Create a pull request for 'branch_2' on GitHub by visiting:
+  remote:      https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217/pull/new/branch_2
+remote:
+  To https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217
+* [new branch]      branch_2 -> branch_2
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git checkout -b branch_3
+Switched to a new branch 'branch_3'
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_3)
+$ echo 'Integer sit amet nisi aliquam, tempor libero quis, cursus erat.' > text_branch_3.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_3)
+$ git add .
+warning: in the working copy of 'text_branch_3.txt', LF will be replaced by CRLF the next time Git touches it
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_3)
+$ git commit -m them text_branch_3
+[branch_3 7481127] them text_branch_3
+1 file changed, 1 insertion(+)
+create mode 100644 text_branch_3.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 350 bytes | 350.00 KiB/s, done.
+Total 3 (delta 1), reused 1 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+  remote: Create a pull request for 'branch_3' on GitHub by visiting:
+  remote:      https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217/pull/new/branch_3
+remote:
+  To https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217
+* [new branch]      branch_3 -> branch_3
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git checkout -b branch_4
+Switched to a new branch 'branch_4'
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_4)
+$ echo 'Cras ac mi nec nisi porta ultrices sed non ante.' > text_branch_4.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_4)
+$ git add .
+warning: in the working copy of 'text_branch_4.txt', LF will be replaced by CRLF the next time Git touches it
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_4)
+$ git commit -m them text_branch_4
+[branch_4 6011198] them text_branch_4
+1 file changed, 1 insertion(+)
+create mode 100644 text_branch_4.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_4)
+$ git push origin branch_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 339 bytes | 339.00 KiB/s, done.
+Total 3 (delta 1), reused 1 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+  remote: Create a pull request for 'branch_4' on GitHub by visiting:
+  remote:      https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217/pull/new/branch_4
+remote:
+  To https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217
+* [new branch]      branch_4 -> branch_4
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git branch -D branch_4
+Deleted branch branch_4 (was 6011198).
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git branch -l
+branch_1
+branch_2
+branch_3
+* main
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git pull
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7 (delta 3), reused 1 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (7/7), 3.74 KiB | 103.00 KiB/s, done.
+From https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217
+84e8ba7..8e28c9c  main       -> origin/main
+Updating 84e8ba7..8e28c9c
+Fast-forward
+text_branch_1.txt | 1 +
+  text_branch_2.txt | 1 +
+  text_branch_3.txt | 1 +
+  text_branch_4.txt | 1 +
+  4 files changed, 4 insertions(+)
+create mode 100644 text_branch_1.txt
+create mode 100644 text_branch_2.txt
+create mode 100644 text_branch_3.txt
+create mode 100644 text_branch_4.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ mkdir main_folder
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ cd main_folder
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217/main_folder (main)
+$ echo xin chao 1 > main_txt_1.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217/main_folder (main)
+$ echo xin chao 2 > main_txt_2.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217/main_folder (main)
+$ echo xin chao 3 > main_txt_3.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217/main_folder (main)
+$ git add .
+warning: in the working copy of 'main_folder/main_txt_1.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'main_folder/main_txt_2.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'main_folder/main_txt_3.txt', LF will be replaced by CRLF the next time Git touches it
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217/main_folder (main)
+$ git commit -m day len github
+[main 63d9cbe] day len github
+3 files changed, 3 insertions(+)
+create mode 100644 main_folder/main_txt_1.txt
+create mode 100644 main_folder/main_txt_2.txt
+create mode 100644 main_folder/main_txt_3.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217/main_folder (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 441 bytes | 441.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217
+8e28c9c..63d9cbe  main -> main
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217/main_folder (main)
+$ git pull
+Already up to date.
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217/main_folder (main)
+$ cd ..
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$
+  Shcd ..ib MINGW64 ~/OneDrive/Documents/bài tập 19A4
+
+Shcd ..ib MINGW64 ~/OneDrive/Documents/bài tập 19A4
+git push origin main
+Everything up-to-date
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git checkout branch_1
+Deletion of directory 'main_folder' failed. Should I try again? (y/n) n
+Switched to branch 'branch_1'
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_1)
+$ git checkout -b branch_5
+Switched to a new branch 'branch_5'
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_5)
+$ echo 'Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non
+metus eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie
+accumsan sapien, ac finibus libero lobortis quis. Praesent ac commodo eros. Nullam
+malesuada v el dui nec feugiat. Cras justo ipsum, scelerisque et elit vitae, porttitor
+tristique turpis. Nam ut hendrerit est. Nulla sed tincidunt nibh. Class aptent taciti
+sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vitae
+egestas lacus. Phasellus turpis ante, euismod quis pellentesque et, pharetra id ligula.
+Vestibulum mattis sem ac ligula auctor viverra. Phasellus dignissim mollis leo, vitae
+tristique enim.' > text_branch_1.txt
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_5)
+$ git add .
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_5)
+$ git commit -m chinh sua text_branch_1
+[branch_5 f806b76] chinh sua text_branch_1
+1 file changed, 9 insertions(+), 1 deletion(-)
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_5)
+$ git push origin branch_5
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 655 bytes | 655.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+  remote: Create a pull request for 'branch_5' on GitHub by visiting:
+  remote:      https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217/pull/new/branch_5
+remote:
+  To https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217
+* [new branch]      branch_5 -> branch_5
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_5)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+git pull <remote> <branch>
+  
+  If you wish to set tracking information for this branch you can do so with:
+  
+  git branch --set-upstream-to=origin/<branch> branch_5
+
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_5)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_1)
+$ git branch -D branch_5
+Deleted branch branch_5 (was f806b76).
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_1)
+$ git branch -l
+* branch_1
+branch_2
+branch_3
+main
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git merge branch_1
+Already up to date.
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git merge branch_2
+Already up to date.
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git merge branch_3
+Already up to date.
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git merge branch_4
+merge: branch_4 - not something we can merge
+
+Did you mean this?
+  origin/branch_4
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git push origin main
+Everything up-to-date
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git branch -D branch_2
+Deleted branch branch_2 (was 666f2e1).
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git branch -D branch_3
+Deleted branch branch_3 (was 7481127).
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git branch -l
+branch_1
+* main
+
+Shib@Shib MINGW64 ~/OneDrive/Documents/bài tập 19A4/Tran_The_Truong-25174600217 (main)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 928 bytes | 154.00 KiB/s, done.
+From https://github.com/TranTheTruong-25174600217-DHKL19A4/Tran_The_Truong-25174600217
+79050a1..1f0ca5a  branch_1   -> origin/branch_1
+Already up to date.
+
