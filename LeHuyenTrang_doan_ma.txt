@@ -1,0 +1,394 @@
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài(xoa_thumuc)
+$ git clone https://github.com/LeHuyenTrang251746Huyen_Trang_bai_tap.git
+Cloning into '25174600203_Le_Huyen_Trang_bai_tap'
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pa
+Receiving objects: 100% (3/3), done.
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài(xoa_thumuc)
+$ cd 25174600203_Le_Huyen_Trang_bai_tap
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (main)
+$ echo " Lorem ipsum dolor sit amet, consectetur tur, eros at
+lacinia suscipit, magna turpis aliquam est, sit aUt vel
+placerat risus. Sed tempor in ex vitae sodales. Da
+viverra sagittis. Vestibulum risus ante, molestiencidunt
+turpis. In sit amet tortor gravida, ultricies ant finibus
+porta nulla sed gravida. Aliquam ultricies dapibubitasse
+platea dictumst. Aliquam aliquam enim at massa ph
+consequat. Donec accumsan quis metus at pellentes
+interdum justo a, aliquam risus." > README.md
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git add .
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git commit -m"Thay đổi nội dung của README.md"
+[main a09ddd2] Thay đổi nội dung của README.md
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git  push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 660 bytes | 660.00 K
+Total 3 (delta 0), reused 0 (delta 0), pack-reuse
+To https://github.com/LeHuyenTrang25174600203DHKLng_bai_tap.git
+   db6cb9a..a09ddd2  main -> main
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git checkout -b branch_1
+Switched to a new branch 'branch_1'
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_1)
+echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_1)
+$ git add .
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_1)
+$ git commit -m"Tạo nhánh 1 thành công"
+[branch_1 c42da44] Tạo nhánh 1 thành công
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_1.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_1)
+$ git push origin branch_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 369 bytes | 369.00 K
+Total 3 (delta 0), reused 0 (delta 0), pack-reuse
+remote:
+remote: Create a pull request for 'branch_1' on G
+remote:      https://github.com/LeHuyenTrang25174_Huyen_Trang_bai_tap/pull/new/branch_1
+remote:
+To https://github.com/LeHuyenTrang25174600203DHKLng_bai_tap.git
+ * [new branch]      branch_1 -> branch_1
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git checkout -b branch_2
+Switched to a new branch 'branch_2'
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_2)
+$ echo " Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_2)
+$ git add .
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_2)
+$ git commit -m"Tạo nhánh 2 thành công"
+[branch_2 edb583f] Tạo nhánh 2 thành công
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_2)
+$ git push origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 362 bytes | 181.00 K
+Total 3 (delta 0), reused 0 (delta 0), pack-reuse
+remote:
+remote: Create a pull request for 'branch_2' on G
+remote:      https://github.com/LeHuyenTrang25174_Huyen_Trang_bai_tap/pull/new/branch_2
+remote:
+To https://github.com/LeHuyenTrang25174600203DHKLng_bai_tap.git
+ * [new branch]      branch_2 -> branch_2
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git checkout -b branch_3
+Switched to a new branch 'branch_3'
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_3)
+$ echo " Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_3)
+$ git add .
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_3)
+$ git commit -m"Tạo nhánh 3 thành công"
+[branch_3 0941e6e] Tạo nhánh 3 thành công
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_3.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 371 bytes | 185.00 K
+Total 3 (delta 0), reused 0 (delta 0), pack-reuse
+remote:
+remote: Create a pull request for 'branch_3' on G
+remote:      https://github.com/LeHuyenTrang25174_Huyen_Trang_bai_tap/pull/new/branch_3
+remote:
+To https://github.com/LeHuyenTrang25174600203DHKLng_bai_tap.git
+ * [new branch]      branch_3 -> branch_3
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git checkout -b branch_4
+Switched to a new branch 'branch_4'
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_4)
+$ echo " Cras ac mi nec nisi porta ultrices sed non ante.." > text_branch_4.
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_4)
+$ git add .
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_4)
+$ git commit -m"Tạo nhánh 4 thành công"
+[branch_4 461e038] Tạo nhánh 4 thành công
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text_branch_4.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_4)
+$ git push origin branch_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 312 bytes | 104.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_4' on GitHub by visiting:
+remote:      https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap/pull/new/branch_4
+remote:
+To https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap.git
+ * [new branch]      branch_4 -> branch_4
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$  git branch -D branch_4
+Deleted branch branch_4 (was 461e038).
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git branch --list
+  branch_1
+  branch_2
+  branch_3
+* main
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git pull
+Already up to date.
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ mkdir "main_folder"
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ cd "main_folder"
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap/main_folder (main)
+$ touch main_txt_1.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap/main_folder (main)
+$ touch main_txt_2.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap/main_folder (main)
+$ touch main_txt_3.txt
+
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap/main_folder (main)
+$ cd ..
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git add main_folder
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git commit -m"Tạo main_folder thành công"
+[main 0d3b293] Tạo main_folder thành công
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 371 bytes | 123.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap.git
+   a09ddd2..0d3b293  main -> main
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git pull
+Already up to date.
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git checkout branch_1
+Deletion of directory 'main_folder' failed. Should I try again? (y/n) fatal: sha1 file 'C:/Users/Huyen Trang/OneDrive/Tài liệu/25174600203_LeHuyenTrang/251746 600203_Le_Huyen_Trang_bai_tap/.git/index.lock' write error: Bad file descriptor
+
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git checkout -b"branch_1"
+fatal: a branch named 'branch_1' already exists
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git checkout branch_1
+git checkout -b branch_5
+error: The following untracked working tree files would be overwritten by checkout:
+        text_branch_1.txt
+Please move or remove them before you switch branches.
+Aborting
+Switched to a new branch 'branch_5'
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_5)
+$ echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non
+metus eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie
+accumsan sapien, ac finibus libero lobortis quis. Praesent ac commodo eros. Nullam
+malesuada v el dui nec feugiat. Cras justo ipsum, scelerisque et elit vitae, porttitor
+tristique turpis. Nam ut hendrerit est. Nulla sed tincidunt nibh. Class aptent taciti
+sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vitae
+egestas lacus. Phasellus turpis ante, euismod quis pellentesque et, pharetra id ligula.
+Vestibulum mattis sem ac ligula auctor viverra. Phasellus dignissim mollis leo, vitae tristique enim." > text_branch_1.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_5)
+$ git add .
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_5)
+$ git commit -m"Sửa tệp tin text_branch_1.txt"
+[branch_5 aaa14aa] Sửa tệp tin text_branch_1.txt
+ 4 files changed, 8 insertions(+)
+ delete mode 100644 main_folder/main_txt_1.txt
+ delete mode 100644 main_folder/main_txt_2.txt
+ delete mode 100644 main_folder/main_txt_3.txt
+ create mode 100644 text_branch_1.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_5)
+$ git push origin branch_5
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 698 bytes | 232.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap/pull/new/branch_5
+remote:
+To https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap.git
+ * [new branch]      branch_5 -> branch_5
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_5)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_1)
+$ git branch -D "branch_5"
+Deleted branch branch_5 (was aaa14aa).
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_1)
+$ git branch -l
+* branch_1
+  branch_2
+  branch_3
+  main
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git push origin --delete branch_5
+To https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap.git
+ - [deleted]         branch_5
+
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git checkout -b branch_4
+Switched to a new branch 'branch_4'
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_4)
+$ echo " Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_4)
+$ git add text_branch_4.txt
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_4)
+$ git push origin branch_4
+To https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap.git
+ ! [rejected]        branch_4 -> branch_4 (non-fast-forward)
+error: failed to push some refs to 'https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_4)
+$ git pull origin branch_4 --rebase
+From https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap
+ * branch            branch_4   -> FETCH_HEAD
+Updating 1242d44..3397363
+Fast-forward
+ text_branch_4.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_4)
+$ git push origin branch_4
+Everything up-to-date
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git branch -D branch_2
+git branch -D branch_3
+git branch -D branch_4
+error: branch 'branch_2' not found
+error: branch 'branch_3' not found
+error: branch 'branch_4' not found
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (main)
+$ git push origin --delete branch_2
+git push origin --delete branch_3
+git push origin --delete branch_4
+error: unable to delete 'branch_2': remote ref does not exist
+error: failed to push some refs to 'https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap.git'
+error: unable to delete 'branch_3': remote ref does not exist
+error: failed to push some refs to 'https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap.git'
+error: unable to delete 'branch_4': remote ref does not exist
+error: failed to push some refs to 'https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap.git'
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_1)
+$ git checkout branch_1
+Already on 'branch_1'
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_1)
+$ git pull origin main
+From https://github.com/LeHuyenTrang25174600203DHKL19A4HN/25174600203_Le_Huyen_Trang_bai_tap
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Huyen Trang@Le_Huyen_Trang MINGW64 ~/OneDrive/Tài liệu/25174600203_LeHuyenTrang/25174600203_Le_Huyen_Trang_bai_tap (branch_1)
+$ git push origin branch_1
+Everything up-to-date
+
+
+
+
+
