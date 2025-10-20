@@ -1,0 +1,102 @@
+ BÀI 1: TẠO PROJECT VÀ CLONE VỀ MÁY 
+git clone https://github.com/htkieu25174600199-bot/25174600199_Ha_Thuy_Kieu_bai_tap.git
+cd 25174600199_Ha_Thuy_Kieu_bai_tap
+ 
+ BÀI 2: SỬA README VÀ COMMIT LẦN ĐẦU 
+notepad README.md
+git status
+git add README.md
+git commit -m "Chỉnh sửa README.md lần đầu"
+git push origin main
+
+ BÀI 3: TẠO CÁC NHÁNH VÀ FILE 
+git checkout -b branch_1
+echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+git add .
+git commit -m "Tạo file text_branch_1.txt"
+git push origin branch_1
+
+git checkout main
+git checkout -b branch_2
+echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+git add .
+git commit -m "Tạo file text_branch_2.txt"
+git push origin branch_2
+
+git checkout main
+git checkout -b branch_3
+echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+git add .
+git commit -m "Tạo file text_branch_3.txt"
+git push origin branch_3
+
+git checkout main
+git checkout -b branch_4
+echo "Cras ac mi nec nisi porta ultrices sed non ante." >> text_branch_4.txt
+git add .
+git commit -m "Tạo file text_branch_4.txt"
+git push origin branch_4
+
+ BÀI 4: XÓA NHÁNH LOCAL branch_4 
+git branch --delete branch_4
+git branch --list
+git branch -r
+
+ BÀI 5: CẬP NHẬT PROJECT TỪ GITHUB 
+git checkout main 
+git pull
+
+
+ BÀI 6: TẠO THƯ MỤC main_folder VÀ 3 FILE 
+git checkout main
+mkdir main_folder
+cd main_folder
+echo "Nội dung file 1" > main_txt_1.txt
+echo "Nội dung file 2" > main_txt_2.txt
+echo "Nội dung file 3" > main_txt_3.txt
+cd ..
+git add .
+git commit -m "Thêm thư mục main_folder và 3 file"
+git push origin main
+
+ BÀI 7: TẠO NHÁNH branch_5 TỪ branch_1 VÀ CHỈNH SỬA FILE 
+git checkout branch_1
+git checkout -b branch_5
+notepad text_branch_1.txt
+git add .
+git commit -m "Cập nhật nội dung text_branch_1.txt"
+git push origin branch_5
+git branch -d branch_5
+git push origin --delete branch_5
+
+ BÀI 8: PULL REQUEST TẤT CẢ CÁC NHÁNH VÀO main
+# Thực hiện trên GitHub: branch_1 → main, branch_2 → main, branch_3 → main, branch_4 → main
+# (đảm bảo trên main có đủ 4 file text_branch_1-4.txt)
+
+ BÀI 9: XÓA NHÁNH TRÊN LOCAL & REMOTE, CẬP NHẬT BRANCH_1 
+git branch --delete branch_2
+git branch --delete branch_3
+git branch --delete branch_4
+git push origin --delete branch_2
+git push origin --delete branch_3
+git push origin --delete branch_4
+git checkout branch_1
+git pull origin main
+git push origin branch_1
+
+BÀI 10: TẠO FILE ĐOẠN MÃ VÀ ĐẨY LÊN GITHUB 
+notepad Le_Minh_Hang_doan_ma.txt
+git add .
+git commit -m "Thêm file chứa toàn bộ lệnh"
+git push origin main
+
+ PHẦN 2: NỘP BÀI LÊN KHO CỦA GIẢNG VIÊN 
+# Fork repo của GV: https://github.com/lhaaaaa/DHKL19A4HN_Nop_Bai_Tap.git
+git clone https://github.com/htkieu25174600199-bot/DHKL19A4HN_Nop_Bai_Tap.git
+mkdir 25174600199_Ha_Thuy_Kieu_bai_tap
+ 
+# Sao chép toàn bộ project đã làm vào thư mục này (kể cả .git)
+git add .
+git commit -m "Nộp bài tập Git và GitHub"
+git push origin main
+# Lên GitHub → Nhấn “Compare & pull request” → “Create pull request”
