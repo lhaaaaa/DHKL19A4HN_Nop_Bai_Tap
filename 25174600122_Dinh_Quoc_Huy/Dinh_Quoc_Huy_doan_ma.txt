@@ -1,0 +1,591 @@
+ tổng hợp lệnh git từ bài 1 đến bài 9
+
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~
+$ cd 25174600122_Dinh_Quoc_Huy_bai_tap
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git commit -m "thêm nội dung"
+On branch branch_1
+nothing to commit, working tree clean
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git push origin main
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/dinhquochuy25174600122DHKL19A4/2517460
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git branch
+* branch_1
+  main
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ ls
+README.md
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git add text_branch_1.txt
+fatal: pathspec 'text_branch_1.txt' did not match any files
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git checkout -b branch_2
+Switched to a new branch 'branch_2'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales."
+Praesent ullamcorper orci eu erat placerat sodales.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git add text_branch_1.txt
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git commit -m "thêm file text_Branch_1.txt vào branch_1"
+[branch_1 c65c452] thêm file text_Branch_1.txt vào branch_1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_1.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git push origin branch_1
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+ ! [rejected]        branch_1 -> branch_1 (fetch first)
+error: failed to push some refs to 'https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git pull origin branch_1 --rebase
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 361 bytes | 60.00 KiB/s, done.
+From https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap
+ * branch            branch_1   -> FETCH_HEAD
+ * [new branch]      branch_1   -> origin/branch_1
+warning: skipped previously applied commit c65c452
+hint: use --reapply-cherry-picks to include skipped commits
+hint: Disable this message with "git config set advice.skippedCherryPicks false"
+Successfully rebased and updated refs/heads/branch_1.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git push origin branch_1
+Everything up-to-date
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git checkout -b branch_2
+fatal: a branch named 'branch_2' already exists
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git checkout branch_2
+Switched to branch 'branch_2'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_2)
+$ git add text_branch_2.txt
+warning: in the working copy of 'text_branch_2.txt', LF will be replaced by CRLF the next time Git touches it
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_2)
+$ git push origin branch_2
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+ ! [rejected]        branch_2 -> branch_2 (fetch first)
+error: failed to push some refs to 'https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_2)
+$ git pull origin branch_2 --rebase
+error: cannot pull with rebase: Your index contains uncommitted changes.
+error: Please commit or stash them.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_2)
+$ git push origin branch_2
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+ ! [rejected]        branch_2 -> branch_2 (fetch first)
+error: failed to push some refs to 'https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_2)
+$ git pull origin branch_2 --rebase
+error: cannot pull with rebase: Your index contains uncommitted changes.
+error: Please commit or stash them.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_2)
+$ git push origin branch_2 --force
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+ + 7d8327f...1f5062b branch_2 -> branch_2 (forced update)
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_2)
+$ git checkout main
+A       text_branch_2.txt
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git checkout -b branch_3
+Switched to a new branch 'branch_3'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_3)
+$ git add text_branch_3.txt
+warning: in the working copy of 'text_branch_3.txt', LF will be replaced by CRLF the next time Git touches it
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_3)
+$ git commit -m " thêm file text_branch_3.txt vào branch_3"
+[branch_3 eac0628]  thêm file text_branch_3.txt vào branch_3
+ 2 files changed, 2 insertions(+)
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_3)
+$ git push origin branch_3
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+ ! [rejected]        branch_3 -> branch_3 (fetch first)
+error: failed to push some refs to 'https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_3)
+$ git pull origin branch_3 --rebase
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 364 bytes | 36.00 KiB/s, done.
+From https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap
+ * branch            branch_3   -> FETCH_HEAD
+ * [new branch]      branch_3   -> origin/branch_3
+Successfully rebased and updated refs/heads/branch_3.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 397 bytes | 397.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+   6b81bd7..b7f5736  branch_3 -> branch_3
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git checckout -b branch_4
+git: 'checckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git checkout -b branch_4
+Switched to a new branch 'branch_4'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_4)
+$ echo " Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_4)
+$ git add text_branch_4.txt
+warning: in the working copy of 'text_branch_4.txt', LF will be replaced by CRLF the next time Git touches it
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_4)
+$ git commit -m " thêm file text_branch_4.txt vào branch_4"
+[branch_4 447677e]  thêm file text_branch_4.txt vào branch_4
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_4.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_4)
+$ git push origin branch_4
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+ ! [rejected]        branch_4 -> branch_4 (fetch first)
+error: failed to push some refs to 'https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_4)
+$ git pull origin branch_4 --rebase
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 354 bytes | 32.00 KiB/s, done.
+From https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap
+ * branch            branch_4   -> FETCH_HEAD
+ * [new branch]      branch_4   -> origin/branch_4
+warning: skipped previously applied commit 447677e
+hint: use --reapply-cherry-picks to include skipped commits
+hint: Disable this message with "git config set advice.skippedCherryPicks false"
+Successfully rebased and updated refs/heads/branch_4.
+g
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_4)
+$ git push origin branch_4
+Everything up-to-date
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_4)
+$ git branch -D branch_4
+error: cannot delete branch 'branch_4' used by worktree at 'C:/Users/Huy/25174600122_Dinh_Quoc_Huy_bai_tap'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_4)
+$ git branch -d branch_4
+error: cannot delete branch 'branch_4' used by worktree at 'C:/Users/Huy/25174600122_Dinh_Quoc_Huy_bai_tap'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git branch -D branch_4
+Deleted branch branch_4 (was c135bf6).
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git branch --list
+  branch_1
+  branch_2
+  branch_3
+* main
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/branch_1
+  origin/branch_2
+  origin/branch_3
+  origin/branch_4
+  origin/main
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 368 bytes | 20.00 KiB/s, done.
+From https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap
+   1f5062b..e80842b  main       -> origin/main
+Updating 1f5062b..e80842b
+Fast-forward
+ main_folder/main_txt_1.txt | 0
+ main_folder/main_txt_2.txt | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ mkdir main_folder
+mkdir: cannot create directory ‘main_folder’: File exists
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ echo "nội dung 1" > main_folder/main_txt_1.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ echo "nội dung 2" > main_folder/main_txt_2.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ echo "nội dung 3" > main_folder/main_txt_3.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git add main_folder
+warning: in the working copy of 'main_folder/main_txt_1.txt', LF will be replaced by CRLF the next time Git touches it
+Merge branch 'main' of https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quo
+
+
+
+From https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap
+ * branch            main       -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ main_folder/main_txt_1.txt | 1 +
+ main_folder/main_txt_2.txt | 1 +
+ main_folder/main_txt_3.txt | 1 +
+ 3 files changed, 3 insertions(+)
+Merge branch 'main' of https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quo
+
+
+From https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap
+ * branch            main       -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ main_folder/main_txt_1.txt | 1 +
+ main_folder/main_txt_2.txt | 1 +
+ main_folder/main_txt_3.txt | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_3)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git checkout -b branch_5
+Switched to a new branch 'branch_5'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_5)
+$ notepad text_branch_1.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_5)
+$ git add text_branch_1.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_5)
+$ git commit -m " cập nhật nội dung mới"
+[branch_5 8cb1620]  cập nhật nội dung mới
+ 1 file changed, 9 insertions(+)
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_5)
+$ git push origin branch_5
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.04 KiB | 534.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap/pull/new/branch_5
+remote:
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+ * [new branch]      branch_5 -> branch_5
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_5)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git branch -d branch_5
+error: the branch 'branch_5' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_5'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git branch -D branch_5
+Deleted branch branch_5 (was 8cb1620).
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git fetch --prune
+From https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap
+ - [deleted]         (none)     -> origin/branch_5
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 1), reused 2 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 1.54 KiB | 121.00 KiB/s, done.
+   4184f38..2bee0b6  branch_1   -> origin/branch_1
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git branch -a
+* branch_1
+  branch_2
+  branch_3
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/branch_1
+  remotes/origin/branch_2
+  remotes/origin/branch_3
+  remotes/origin/branch_4
+  remotes/origin/main
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git checkout branch_2
+Switched to branch 'branch_2'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_2)
+$ git commit -m "thêm file text_branch_2.txt vào branch_2"
+On branch branch_2
+nothing to commit, working tree clean
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git branch -D branch_2
+Deleted branch branch_2 (was 8792b07).
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git push origin  --deletet branch_2
+error: unknown option `deletet'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git push origin --delete branch_2
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+ - [deleted]         branch_2
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git branch -D branch_3
+Deleted branch branch_3 (was 355c531).
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git push origin --delete branch_3
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+ - [deleted]         branch_3
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git branch -D branch_4
+error: branch 'branch_4' not found
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git checkout branch_4
+branch 'branch_4' set up to track 'origin/branch_4'.
+Switched to a new branch 'branch_4'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git branch -D branch_4
+Deleted branch branch_4 (was c135bf6).
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git push origin --delete branch_4
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+ - [deleted]         branch_4
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git fetch --prune
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 14 (delta 4), reused 6 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (14/14), 3.67 KiB | 101.00 KiB/s, done.
+From https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap
+   8792b07..a2ba7db  main       -> origin/main
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git pull origin main
+From https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap
+ * branch            main       -> FETCH_HEAD
+Updating a43f34d..a2ba7db
+Fast-forward
+ text_branch_1.txt | 9 +++++++++
+ text_branch_2.txt | 1 +
+ text_branch_3.txt | 1 +
+ text_branch_4.txt | 1 +
+ 4 files changed, 12 insertions(+)
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ git push origin branch_1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/dinhquochuy25174600122DHKL19A4/25174600122_Dinh_Quoc_Huy_bai_tap.git
+   2bee0b6..a2ba7db  branch_1 -> branch_1
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ echo " tổng hợp lệnh git từ bài 1 đến bài 9" > Dinh_Quoc_Huy_doan_ma.txt
+
+Huy@DESKTOP-IJM22N7 MINGW64 ~/25174600122_Dinh_Quoc_Huy_bai_tap (branch_1)
+$ notepad Dinh_Quoc_Huy_doan_ma.txt
